@@ -110,11 +110,17 @@ const nombreFunctionFlecha = (nombre, apellido) => { //argumentos
     // Aquí el código   
 }
 
-// Crear funciones anónimas sin nombre
+// Crear funciones anónimas 
 
-function() {
-
+const functionAnonima = function() {
+    // Aquí el código
 }
+
+// Llamadas enviando parametros con funciones anonimas
+
+llamada(function(){});
+
+llamada(() => {});
 
 
 /**********************************************************
