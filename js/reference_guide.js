@@ -18,6 +18,12 @@ variableLet = 'Mundo';
 const variableConstAsignada = 'Hello'
 
 
+/**********************************************************
+ * 
+ * A  R  R  A  Y  
+ * 
+ ***********************************************************/
+
 
 // Creación de un arreglo o Array
 
@@ -146,6 +152,13 @@ let setVariable; // almacena el valor de la variable
 
 let variableGet = getVariable();
 let variableSet = setVariable('Nuevo valor');
+
+
+/**********************************************************
+ * 
+ * B  U  C  L  E  S   o   I  T  E  R  A  D  O  R  E  S
+ * 
+ ***********************************************************/
 
 // bucles o iteradores
 
