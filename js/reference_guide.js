@@ -1,9 +1,15 @@
+/**********************************************************
+ * 
+ * V  A  R  I  A  B  L  E  S
+ * 
+ ***********************************************************/
+
+
 //Creación de variables => declaración de variables
 
 export var variableVar;            // es la mas antigua
 let variableLet;            // esta sustituye a la var
 const variableConst = 'Valor Predefinido';   // es la mas usada
-
 
 // Asignación de variables
 
@@ -11,10 +17,7 @@ variableVar = 'hola';
 variableLet = 'Mundo';
 const variableConstAsignada = 'Hello'
 
-// Vuejs
 
-// const variable = ref(''); // Declaración
-// variable.value = 30;
 
 // Creación de un arreglo o Array
 
@@ -82,6 +85,13 @@ let o = {
 // console.log(o.arr[1].tipo);
 
 
+
+/**********************************************************
+ * 
+ * F  U  N  C  I  O  N  E  S
+ * 
+ ***********************************************************/
+
 // Crear método o función
 
 function nombreFunction(nombre, apellido){ // argumentos
@@ -94,6 +104,18 @@ const nombreFunctionFlecha = (nombre, apellido) => { //argumentos
     // Aquí el código   
 }
 
+// Crear funciones anónimas sin nombre
+
+function() {
+
+}
+
+
+/**********************************************************
+ * 
+ * C  L  A  S  E  S
+ * 
+ ***********************************************************/
 
 // Crear clase
 
