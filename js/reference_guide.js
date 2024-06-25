@@ -136,9 +136,12 @@ class NombreClase {
     // Aquí las propiedades
 
     nombre;
+    apellido;
 
-    constructor() {
-
+    // Construye la clase a partir del "new"
+    constructor(nombre, apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
 
@@ -149,6 +152,10 @@ class NombreClase {
     }
     
 }
+
+//
+
+const claseNueva = new NombreClase('Milena', 'Aguilar');
 
 
 //get y set
