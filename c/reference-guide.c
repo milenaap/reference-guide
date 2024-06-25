@@ -27,14 +27,12 @@ int main() {
     //Declaración de las variables
 
     // tipo nombre de la variable = valor;
-
     int eleccion;
     int num1, num2, result = 0;
     int resto = 0;
     int cociente = 0;
 
     // imprimir por pantalla solo con la frase que se quiere
-
     printf("Escoje una operacion:\n");
     printf("1. Multiplicacion\n");
     printf("2. Division\n");
@@ -83,7 +81,6 @@ int nombreVariable() {
 }
 
 // Función vacia 
-
 void imprimeBienvenida() {
     system("cls");
     printf("Bienvenido al juego del Ahorcado \n \n");
