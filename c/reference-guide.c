@@ -8,18 +8,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+
 /**********************************************************
  * 
- * Declaracion de funciones 
+ * Firma de las funciones 
  * 
  ***********************************************************/
-// (ejemplo)
-int nombreVariable() {
-    return rand() % 100 + 1; // Operaciones
-}
-
-// Función vacia 
-
 void imprimeBienvenida();
 
 /**********************************************************
@@ -53,4 +47,47 @@ int main() {
     scanf("%d", &eleccion);    
     scanf("%d", &num1);    
     scanf("%d", &num2);
+
+
+    /**********************************************************
+     * 
+     * B  U  C  L  E  S   o   I  T  E  R  A  D  O  R  E  S
+     * 
+     ***********************************************************/
+
+    // bucles o iteradores
+
+
+    // for
+    for(int i = 0; i < 10; i++){ // for = para
+        //TODO aquí va el código o la lógica
+    }
+
+    // while
+    int edad = 10;
+    while( edad< 18 ){ // while = mientras
+    //TODO aquí va el código o la lógica
+
+    edad++;
+    } 
+}
+
+/**********************************************************
+ * 
+ * Declaracion de funciones 
+ * 
+ ***********************************************************/
+// (ejemplo)
+int nombreVariable() {
+    return rand() % 100 + 1; // Operaciones
+}
+
+// Función vacia 
+
+void imprimeBienvenida() {
+    system("cls");
+    printf("Bienvenido al juego del Ahorcado \n \n");
+    printf("Tienes que adivinar la palabra secreta \n");
+    printf("Tienes 6 intentos \n");
+    printf("Buena suerte!! \n");
 }
