@@ -18,6 +18,10 @@ int nombreVariable() {
     return rand() % 100 + 1; // Operaciones
 }
 
+// Función vacia 
+
+void imprimeBienvenida();
+
 /**********************************************************
  * 
  * Declaracion de la función principal (main) 
