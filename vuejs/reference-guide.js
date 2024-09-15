@@ -25,7 +25,15 @@
    Script: <script>...</script>
 
 
-   
+   EMITS:
+
+    -En el padre se escribe el nombre de la funcion en camelcase. Ex: 1) Declaracion de la Funcion: const ocultarModal = () => {//Cuerpo de la funcion}. 2) Y en el componente: @ocultar-modal="ocultarModal" 
+
+ 
+
+    -En el hijo se escribe el nombre de la funcion con guion. Ex: 1) Se recibe el emit: const emit = defineEmits(['ocultar-modal']). 2) En la etiqueta:  @click.prevent="$emit('ocultar-modal')"
+
+
  * PARA HACER UNA VARIABLE REF
  * */ 
 
