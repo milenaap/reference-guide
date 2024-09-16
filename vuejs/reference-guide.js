@@ -25,13 +25,34 @@
    Script: <script>...</script>
 
 
-   EMITS:
+   EMIT (envio solamente funciones):
 
-    -En el padre se escribe el nombre de la funcion en camelcase. Ex: 1) Declaracion de la Funcion: const ocultarModal = () => {//Cuerpo de la funcion}. 2) Y en el componente: @ocultar-modal="ocultarModal" 
+    -En el padre se escribe el nombre de la funcion en camelCase y con el signo @. 
+        Ex: 
+        1) Declaracion de la Funcion: const ocultarModal = () => {//Cuerpo de la funcion}. 
+        2) Y en el componente: @ocultar-modal="ocultarModal" 
 
- 
+     -En el hijo se escribe el nombre de la funcion con guion y se recibe en el defineEmit(). 
+        
+        1) Se recibe el emit: const emit = defineEmits(['ocultar-modal']). 
+        2) En la etiqueta:  @click.prevent="$emit('ocultar-modal')"
 
-    -En el hijo se escribe el nombre de la funcion con guion. Ex: 1) Se recibe el emit: const emit = defineEmits(['ocultar-modal']). 2) En la etiqueta:  @click.prevent="$emit('ocultar-modal')"
+
+    PROPS (envio solamente variables):
+
+    - En el Padre se escribe igual que una variable pero con : antes del nombre de la variable. 
+        Ex: :unaVariable="unaVariable"
+
+    - En el Hijo se reciben en el defineProps()
+        Ex: 
+        const props = defineProps({
+            unaVariable: {
+                type: Object,
+                required: true
+            }
+
+        })
+
 
 
  * PARA HACER UNA VARIABLE REF
