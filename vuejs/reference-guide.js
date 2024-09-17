@@ -19,7 +19,7 @@
 
  - Cuando este presente un "@" hace referencia a una funcion. Ex: @click.prevent="unaFuncion"
  - Cuando este presente un ":" hace referencia a una variable. Ex: :src="unaVariable" / :unaVariable="unaVariable"
- - Cuando se usa el v-model hace referencia a los input. Ex: <input v-model="nombre"/> 
+ - Cuando se usa el v-model hace referencia a los input. Ex: <input v-model="nombre"/> se puede usar el v-model.number para convertir en numero el campo que    necesitamos
  - Aquí en el Template NO SE UTILIZA el ".value" para las variables
 
    Script: <script>...</script>
