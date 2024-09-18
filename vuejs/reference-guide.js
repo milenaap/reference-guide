@@ -14,16 +14,18 @@
  /** 
  * NOTAS: 
  
- 
-   Template: <template>...</template> 
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ -----------------------Template: <template>...</template>------------------------------------------------------------------------------------------------------ 
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  - Cuando este presente un "@" hace referencia a una funcion. Ex: @click.prevent="unaFuncion"
  - Cuando este presente un ":" hace referencia a una variable. Ex: :src="unaVariable" / :unaVariable="unaVariable"
  - Cuando se usa el v-model hace referencia a los input. Ex: <input v-model="nombre"/> se puede usar el v-model.number para convertir en numero el campo que    necesitamos
  - Aquí en el Template NO SE UTILIZA el ".value" para las variables
 
-   Script: <script>...</script>
-
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ -----------------------Script: <script>...</script>------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
    EMIT (envio solamente funciones):
 
@@ -52,6 +54,19 @@
             }
 
         })
+
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ -----------------------Style (Solamente CSS)-------------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ En la etiqueta <style></style>:
+
+ -Cuando no tiene ninguna propiedad el estilo(clases Css) es para todo el proyecto, es decir se aplica a todos los componentes
+ -Cuando tiene la propiedad "scoped" <style scoped></style> se utiliza solamente en el componente, es decir las clases se aplicaran solo en ese componente
+ -Cuando tiene la propiedad 'lang="scss" <style lang="scss"></style> hace referencia a codogo SASS
+
 
 
 
