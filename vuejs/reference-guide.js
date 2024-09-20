@@ -208,12 +208,7 @@ formulario.edad = 30;
 //<template>
 
    
-  <p
-    {{variableParaEnviar}}
-    
-   >
-
-   </p>
+  <p>{{variableParaEnviar}}</p>
 
    
 //</template>
