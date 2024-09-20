@@ -15,8 +15,10 @@
  * NOTAS: 
  
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
- -----------------------Template: <template>...</template>------------------------------------------------------------------------------------------------------ 
+ -----------------------Template: <template>...</template>---------------------------------------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Aquí dentro de un <div><div/> o un <p><p/> cuando muestras las variable para que se vea en el navegador ex: {{ gasto.cantidad }} también se puede hacer una llamada a una función y enviarle uno o más parámetros Ex: <p class="cantidad">{{ formatearCantidad(gasto.cantidad) }}</p> --> "formatearCantidad" es la funcion se le hace una llamada y dentro se le esta enviando el parámetro --> "gasto.cantidad"
+
 
  - Cuando este presente un "@" hace referencia a una funcion. Ex: @click.prevent="unaFuncion"
  - Cuando este presente un ":" hace referencia a una variable. Ex: :src="unaVariable" / :unaVariable="unaVariable"
