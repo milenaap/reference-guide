@@ -1,9 +1,8 @@
 // Vuejs
 
-
-// Para que se vean el nombre de las variables en pantalla
-
-<div>{{ mensaje }}</div> 
+//  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------------------------Template: <template>...</template>--------------------------------------------------------------
+//  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /**********************************************************
  * 
@@ -11,14 +10,18 @@
  * 
  ***********************************************************/
 /**
- /** 
- * NOTAS: 
- 
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------
- -----------------------Template: <template>...</template>---------------------------------------------------------------------------------------------------
- ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Aquí dentro de un <div><div/> o un <p><p/> cuando muestras las variables para que se vea en el navegador ex: {{ gasto.cantidad }} también se puede hacer una llamada a una función y enviarle uno o más parámetros Ex: <p class="cantidad">{{ formatearCantidad(gasto.cantidad) }}</p> --> "formatearCantidad" es la funcion se le hace una llamada y dentro se le esta enviando el parámetro --> "gasto.cantidad"
+/** 
+* NOTAS: 
+* 
+ // Para que se vean el nombre de las variables en pantalla:
 
+ <div>{{ mensaje }}</div>
+
+ 
+Aquí en el Template dentro de un <div><div/> o un <p><p/> cuando muestras las variables para que se vea en el navegador ex: {{ gasto.cantidad }} también se puede hacer una llamada a una función y enviarle uno o más parámetros Ex: <p class="cantidad">{{ formatearCantidad(gasto.cantidad) }}</p> 
+    
+--> "formatearCantidad" es la funcion se le hace una llamada y dentro se le esta enviando el parámetro --> "gasto.cantidad"
+NOTA: no solo el el script se pueden hacer llamadas a funciones y enviar paramentros en el Template también
 
  - Cuando este presente un "@" hace referencia a una funcion. Ex: @click.prevent="unaFuncion"
  - Cuando este presente un ":" hace referencia a una variable. Ex: :src="unaVariable" / :unaVariable="unaVariable"
@@ -26,26 +29,26 @@
  - Aquí en el Template NO SE UTILIZA el ".value" para las variables
 
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
- -----------------------Script: <script>...</script>------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------Script: <script>...</script>-------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   EMIT (envio solamente funciones):
+EMIT (envio solamente funciones):
 
-    -En el padre se escribe el nombre de la funcion en camelCase y con el signo @. 
-        Ex: 
-        1) Declaracion de la Funcion: const ocultarModal = () => {//Cuerpo de la funcion}. 
-        2) Y en el componente: @ocultar-modal="ocultarModal" 
+-En el padre se escribe el nombre de la funcion en camelCase y con el signo @. 
+    Ex: 
+    1) Declaracion de la Funcion: const ocultarModal = () => {//Cuerpo de la funcion}. 
+    2) Y en el componente: @ocultar-modal="ocultarModal" 
 
-     -En el hijo se escribe el nombre de la funcion con guion y se recibe en el defineEmit(). 
+    -En el hijo se escribe el nombre de la funcion con guion y se recibe en el defineEmit(). 
         
-        1) Se recibe el emit: const emit = defineEmits(['ocultar-modal']). 
-        2) En la etiqueta:  @click.prevent="$emit('ocultar-modal')"
+    1) Se recibe el emit: const emit = defineEmits(['ocultar-modal']). 
+    2) En la etiqueta:  @click.prevent="$emit('ocultar-modal')"
 
 
-    PROPS (envio solamente variables):
+PROPS (envio solamente variables):
 
-    - En el Padre se escribe igual que una variable pero con : antes del nombre de la variable. 
-        Ex: :unaVariable="unaVariable"
+- En el Padre se escribe igual que una variable pero con : antes del nombre de la variable. 
+    Ex: :unaVariable="unaVariable"
 
     - En el Hijo se reciben en el defineProps()
         Ex: 
@@ -59,7 +62,7 @@
 
 
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
- -----------------------Style (Solamente CSS)-------------------------------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------Style (Solamente CSS)--------------------------------------------------------------------
  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
