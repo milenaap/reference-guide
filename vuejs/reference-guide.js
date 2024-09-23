@@ -70,7 +70,7 @@ PROPS (envio solamente variables):
 
  -Cuando no tiene ninguna propiedad el estilo(clases Css) es para todo el proyecto, es decir se aplica a todos los componentes
  -Cuando tiene la propiedad "scoped" <style scoped></style> se utiliza solamente en el componente, es decir las clases se aplicaran solo en ese componente
- -Cuando tiene la propiedad 'lang="scss" <style lang="scss"></style> hace referencia a codogo SASS
+ -Cuando tiene la propiedad 'lang="scss" <style lang="scss"></style> hace referencia a codigo SASS
 
 
 
