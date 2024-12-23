@@ -7,7 +7,7 @@
 
 
 /*
-- fetch es una llamada
+- fetch es una llamada y solo se usa para leer archivos y en especial consultar API's
 - En la llamada se envía la url de la API a consultar
 - El primer ".then()" es una llamada y dentro se envía una arrow function. Aquí se convierte la respuesta de String a JSON. Recibe un argumento y retorna ese argumento en formato JSON
 - El segundo ".then()" es una llamada y se envia un arrow function. Aquí se procesa la respuesta del API convertida en JSON en primer .then y aquí es donde se procesa el objeto de respuesta obtenida del API, por ejemplo: la variable "data" se puede procesar lo objetos que vienen dentro de el; ex: data.Data, "Data" es un valor que viene dentro del objeto "data"
