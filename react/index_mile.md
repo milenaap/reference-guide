@@ -1,12 +1,9 @@
-/**********************************************************
- * 
- * VARIABLES
- * 
- ***********************************************************/
+# VARIABLES
+ 
+## Hook  
 
+```sh
 
-/**
- * Hook  
  Se importa 
 
 - useState
@@ -42,16 +39,38 @@ const formData = {                          /// <------- NO SIEMPRE van la decla
  }
 
 
-
-
- */
-
+# VARIABLES_2
  
+ ## Hook  
+ Se importa 
+
+ import { useState } from "react";
+
+ Luego en el componente se declara la variable y la funcion que la modifica
+ const [nombreVariable, setNombreVariable] = useState(valorInicial);        // Se puede inicializar con cualquier valor
  
 
+ Funcional component
 
+
+ import React from 'react'
  
- 
+ export const CounterScreen = () => {
+
+    // Declaración de la variable de estado
+    const [counter, setCounter] = useState(0);
+
+    // Retorno del componente   
+   return (
+     <div>CounterScreen</div>
+   )
+ }
+
+```
+
+
+
+
 
 
 
